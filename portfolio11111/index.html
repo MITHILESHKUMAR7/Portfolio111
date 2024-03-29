@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" style="--inner1Vh: 0.28px; --sbw: 0px;" data-lt-installed="true"><head><base href="/mithilesh-kumar/">
+<div class="footer-overflow-container" lang="en">
+  <div class="footer-container">
+    <button id="report_button" class="footer-pill footer-pill-secondary" type="button">
+    </button>
+  
+      <div class="footer-pill-primary-background">
+        <svg viewBox="20 20 55 55" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="cyanSpotLarge" cx="0.5" cy="0.5" r="0.5" fx="0.8" fy="0.8" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(0, 196, 204)" stop-opacity="1"></stop>
+              <stop offset="100%" stop-color="rgb(0, 196, 204)" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="cyanSpot" cx="0.5" cy="0.5" r="0.5" fx="0.2" fy="0.2" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(0, 196, 204)" stop-opacity="0.75"></stop>
+              <stop offset="100%" stop-color="rgb(0, 196, 204)" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="purpleSpotLarge" cx="0.5" cy="0.5" r="0.5" fx="0.8" fy="0.8" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(125, 42, 232)" stop-opacity="1"></stop>
+              <stop offset="100%" stop-color="rgb(125, 42, 232)" stop-opacity="0"></stop>
+            </radialGradient>
+            <radialGradient id="purpleSpot" cx="0.5" cy="0.5" r="0.5" fx="0.2" fy="0.2" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(125, 42, 232)" stop-opacity="0.85"></stop>
+              <stop offset="100%" stop-color="rgb(125, 42, 232)" stop-opacity="0"></stop>
+            </radialGradient>
+          </defs>
+          <!-- Average the RGB values of the Cyan & Purple brand colors -> Blue rect background -->
+          <rect x="0" y="0" width="100" height="100" fill="rgb(62.5, 119, 218)"></rect>
+          <g class="animation-container">
+            <!-- Initial Rotation -->
+            <g transform="rotate(25)">
+              <!-- Large Spots -->
+              <g transform="rotate(0) scale(2) translate(-40, -40)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#cyanSpotLarge)"></rect>
+              </g>
+              <g transform="rotate(180) scale(2) translate(-40, -40)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#cyanSpotLarge)"></rect>
+              </g>
+              <g transform="rotate(90) scale(1.5) translate(-25, -25)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#purpleSpotLarge)"></rect>
+              </g>
+              <g transform="rotate(270) scale(1.5) translate(-25, -25)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#purpleSpotLarge)"></rect>
+              </g>
+              <!-- Small spots -->
+              <g transform="rotate(0) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#purpleSpot"></rect>
+              </g>
+              <g transform="rotate(180) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#purpleSpot"></rect>
+              </g>
+              <g transform="rotate(90) scale(1.2) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#cyanSpot)"></rect>
+              </g>
+              <g transform="rotate(270) scale(1.2) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#cyanSpot)"></rect>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+  <div id="modal_backdrop" class="modal-backdrop"></div>
+  <div id="modal" class="report-form-modal" role="dialog">
+    <div class="form-content" id="form_step_terms" style="display: block;" aria-labelledby="termsTitle" aria-describedby="termsDesc" tabindex="0">
+      <div class="form-buttons">
+        <button id="form_close_initial" type="button" class="tertiary-button">
+        </button>
+      </div>
+    </div>
+    <div class="form-content" id="form_step_report_reason" style="display: none;" aria-labelledby="reportTitle" aria-describedby="reportDesc" tabindex="0">
+      <label class="form-radio-input" for="report_reason_0">
+        <input id="report_reason_0" class="radio-button-input" type="radio" name="report_reason" value="0" autocomplete="off" checked="">
+        <span class="radio-button"></span>
+      </label>
+</div>
+  </div>
+</body>
+</html>
